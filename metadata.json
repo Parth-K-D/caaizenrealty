@@ -1,0 +1,6 @@
+{
+  "name": "Caaizen Realty",
+  "description": "An eco-luxury real estate showcase featuring curated farm estates and sustainable architecture, complete with high-end interactive elements and seamless transitions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
