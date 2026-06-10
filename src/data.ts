@@ -140,7 +140,7 @@ export const TEAM_MEMBERS_DATA: TeamMember[] = [
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDX7qCBvoeWy84hYgkPUx90qMHVOvr7rmdHHj0DMQjNul_9_xYebiEZG4mjP9wGJ2mBXqKt_NxuZ33FKQT8V1AmD_d577oDYXPQsHgCuiihqFt_76dLpyQ63jUOZgY_aE0B7raSOhGDmtIL3HKiL7OTQMkQIxSkqqQ7CFeqG-gb0NYU9ZrdKjLaTSuYLMyAvil5BQ_TE5PwMWTuOYaVTjowlxn-bDLAdZDNqD80ehRBwzDvf1ZtnVgWs6jAldZeq2r-RspaKptdQLw",
     specialty: "Legal security & asset integration",
     quote: "Securing an estate at Caaizen is a legacy acquisition. It is a bulletproof wealth reserve that secures both your family and the natural ecosystem."
-  }
+  },
   {
     id: "team-4",
     name: "Vadiraj",
