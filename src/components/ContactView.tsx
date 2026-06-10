@@ -3,6 +3,16 @@ import {
   Mail, Phone, MapPin, Compass, Clock, Map, Sparkles, Building2, Smartphone, ArrowUpRight, CheckCircle 
 } from "lucide-react";
 
+declare module "react/jsx-runtime";
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [elemName: string]: any;
+    }
+  }
+}
+
 export default function ContactView() {
   // Coordinated selection tab
   const [selectedLocation, setSelectedLocation] = useState<"site" | "hq">("site");
@@ -16,8 +26,8 @@ export default function ContactView() {
           Siting & Acquisitions Desk
         </span>
         <h2 className="text-4xl md:text-5xl font-light tracking-tight text-[#F3F4F1] font-sans">
-          Connect with <span className="font-serif italic text-emerald-400">Our Advisors</span>
-        </h2>
+          Connect with <span className="font-serif italic text-emerald-400">us</span>
+        </h2>   
         <p className="text-stone-400 text-sm font-light max-w-lg mx-auto mt-4 leading-relaxed">
           Caaizen Realty operates exclusively through coordinated referrals. No complex registration forms are required—simply reach out to us directly below.
         </p>
@@ -38,7 +48,7 @@ export default function ContactView() {
                   Direct Line & Email
                 </h3>
                 <p className="text-stone-500 text-xs font-light mt-1.5 leading-relaxed">
-                  Connect immediately with our principal client success coordinators of high-density estate projects.
+                  Connect immediately with us.
                 </p>
               </div>
 
@@ -67,7 +77,7 @@ export default function ContactView() {
                   <div>
                     <span className="text-stone-500 font-mono text-[9.5px] uppercase tracking-wider block">Acquisition Queries</span>
                     <a href="mailto:acquisitions@caaizenrealty.com" className="text-stone-200 text-base font-mono hover:text-emerald-400 transition block mt-1">
-                      acquisitions@caaizenrealty.com
+                      caaizenrealty@gmail.com
                     </a>
                     <span className="text-[10px] text-stone-500 font-sans block mt-1">Written inquiries receive answers in 24 hours</span>
                   </div>
@@ -81,19 +91,11 @@ export default function ContactView() {
                   <div>
                     <span className="text-stone-500 font-mono text-[9.5px] uppercase tracking-wider block">Advisor Mobile Connect</span>
                     <a href="tel:+918049002235" className="text-stone-200 text-base font-mono hover:text-emerald-400 transition block mt-1">
-                      +91 80 4900 2235
+                      +91 9731133655
                     </a>
                   </div>
                 </div>
 
-              </div>
-
-              {/* Invitation Policy Alert */}
-              <div className="p-4 bg-[#1b1c19]/80 border border-emerald-950/40 rounded flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
-                <p className="text-stone-400 text-xs leading-relaxed">
-                  <strong className="text-stone-300">Invite-Only Access:</strong> Siting visits are strictly scheduled in advance and limited to verified buyers to maintain serene local density on agricultural plots.
-                </p>
               </div>
 
             </div>
@@ -119,16 +121,6 @@ export default function ContactView() {
                 {/* Visual coordinate tab toggler */}
                 <div className="flex gap-1 p-0.5 bg-[#171916] rounded border border-stone-850">
                   <button 
-                    onClick={() => setSelectedLocation("site")}
-                    className={`px-3 py-1 text-[9px] font-mono tracking-widest uppercase rounded cursor-pointer ${
-                      selectedLocation === "site" 
-                        ? "bg-emerald-950/40 text-emerald-400 border border-emerald-900/35"
-                        : "text-stone-500 hover:text-stone-300"
-                    }`}
-                  >
-                    Site
-                  </button>
-                  <button 
                     onClick={() => setSelectedLocation("hq")}
                     className={`px-3 py-1 text-[9px] font-mono tracking-widest uppercase rounded cursor-pointer ${
                       selectedLocation === "hq" 
@@ -142,33 +134,10 @@ export default function ContactView() {
               </div>
 
               {/* Dynamic location presentation */}
-              {selectedLocation === "site" ? (
+              {selectedLocation === "office" ? (
                 <div className="space-y-4">
-                  <div className="space-y-2">
-                    <span className="text-emerald-500 font-mono text-[9.5px] tracking-widest uppercase font-medium flex items-center gap-1.5">
-                      <MapPin className="w-3.5 h-3.5" /> THE RETREAT FARMHOUSE SITE
-                    </span>
-                    <h4 className="text-xl text-[#F3F4F1] font-sans font-light">Bidadi Lands Location</h4>
-                    <p className="text-stone-400 text-sm font-light leading-relaxed">
-                      Survey No. 84, Forest Fringe Road, Harohalli Reserve, Bidadi, Bengaluru Rural District, Karnataka — 562112
-                    </p>
-                  </div>
+                  
 
-                  {/* Lat Long block */}
-                  <div className="p-4 bg-[#171916] border border-stone-900 rounded font-mono text-xs text-stone-400 space-y-1.5">
-                    <div className="flex justify-between">
-                      <span className="text-stone-500 uppercase">Latitude:</span>
-                      <span className="text-emerald-400">12.6455° N</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-stone-500 uppercase">Longitude:</span>
-                      <span className="text-emerald-400">77.4988° E</span>
-                    </div>
-                    <div className="flex justify-between pt-1 border-t border-stone-850">
-                      <span className="text-stone-500 uppercase">Elevation:</span>
-                      <span>900m above sea level</span>
-                    </div>
-                  </div>
                 </div>
               ) : (
                 <div className="space-y-4">
@@ -176,48 +145,26 @@ export default function ContactView() {
                     <span className="text-emerald-500 font-mono text-[9.5px] tracking-widest uppercase font-medium flex items-center gap-1.5">
                       <Building2 className="w-3.5 h-3.5" /> CORPORATE HEADQUARTERS
                     </span>
-                    <h4 className="text-xl text-[#F3F4F1] font-sans font-light">Caaizen Holdings Ltd.</h4>
+                    <h4 className="text-xl text-[#F3F4F1] font-sans font-light">Caaizen Realty Ltd.</h4>
                     <p className="text-stone-400 text-sm font-light leading-relaxed">
-                      5th Floor, Earth Tower, Lavelle Road, Bangalore Main Circle, Karnataka — 560001
+                      224, 3rd Floor, S.S Complex 14th Cross, Sampige Road, Malleswaram, Bengaluru - 560003, Karnataka, India
                     </p>
                   </div>
 
-                  {/* Lat Long block */}
-                  <div className="p-4 bg-[#171916] border border-stone-900 rounded font-mono text-xs text-stone-400 space-y-1.5">
-                    <div className="flex justify-between">
-                      <span className="text-stone-500 uppercase">Latitude:</span>
-                      <span className="text-emerald-400">12.9716° N</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-stone-500 uppercase">Longitude:</span>
-                      <span className="text-emerald-400">77.5946° E</span>
-                    </div>
-                    <div className="flex justify-between pt-1 border-t border-stone-850">
-                      <span className="text-stone-500 uppercase">Zoning Code:</span>
-                      <span>HQ-Metro-01</span>
-                    </div>
-                  </div>
+
                 </div>
               )}
 
               {/* Small imagery preview from site */}
-              <div className="border border-stone-850 p-1 bg-[#1b1c19]/30 rounded mt-4">
+              <div className="border p-1 bg-[#1b1c19]/30 rounded mt-4">
                 <img 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBULW4X7DFbvlc2ksnieUhdHAFc1eZqQgvsBnodEn2j5oYe8tneL2keHOrw5ElZt4e_I541k0Q6SzLqoemr2P54dk3O51eFWtUyXg6y1AhlQPRdlm4HtYevJ4iQOKoBRzZ4lLOby22yLr95FqhhoVA1DfzbqTu0Uy_Ty9RDcFQRvSlCGRsVdFGeRDZLi4OnY3BjzkWYc4CnaldTbIF8c4WI4dox0shz1xmdGWPwHKvqy57RKI0V66zMx_HRLbYE7u1p-O3i5Vxsvc8"
-                  alt="Beautiful natural landscape of Bidadi site surrounding" 
-                  className="w-full aspect-[21/9] object-cover rounded filter brightness-90 shrink-0"
+                  src="../src/CaaizenQR.png"
+                  alt="QR Code for Caaizen Realty Office Location" 
+                  className="w-full object-cover rounded filter brightness-90 shrink-0"
                   referrerPolicy="no-referrer"
                 />
               </div>
 
-            </div>
-
-            {/* Legal regulatory footnote */}
-            <div className="pt-6 border-t border-stone-900/60 mt-8">
-              <span className="font-mono text-[8px] text-[#5e665a] uppercase block tracking-widest mb-1">REGULATORY DISCLOSURES</span>
-              <p className="text-[10px] text-stone-500 font-light leading-relaxed">
-                Referral coordination is monitored directly by our compliance advisors. Personal datasets are locked and deleted fully after site-visit coordination sequences as per security laws.
-              </p>
             </div>
 
           </div>
