@@ -506,7 +506,7 @@ export default function HomeView({ onSetTab }: HomeViewProps) {
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center border-t border-stone-900/40 pt-12">
           <div className="flex flex-col items-start gap-2">
             <span className="font-mono text-[9px] tracking-[0.3em] uppercase block text-stone-600">Developed in Trust by</span>
-            <Logo variant="full" className="w-36 h-14 -ml-2" />
+            <img src="/logo_nobg.png" alt="Caaizen Realty Logo" className="h-20" />
           </div>
           <div className="text-center md:text-left">
             <p className="text-xs leading-relaxed max-w-xs md:mx-0">
@@ -518,7 +518,7 @@ export default function HomeView({ onSetTab }: HomeViewProps) {
               onClick={() => onSetTab("contact")}
               className="px-4 py-2 bg-[#171916] border border-stone-800 hover:border-emerald-900 text-stone-300 font-mono text-[9px] tracking-widest uppercase rounded cursor-pointer transition-colors duration-300"
             >
-              Contact Our Advisors
+              Contact Us
             </button>
           </div>
         </div>

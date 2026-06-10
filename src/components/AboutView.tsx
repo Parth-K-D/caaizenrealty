@@ -43,12 +43,12 @@ export default function AboutView({ onSetTab }: AboutViewProps) {
           </motion.div>
 
           <h2 className="text-3xl md:text-5xl font-light tracking-tight text-[#F3F4F1] leading-tight max-w-3xl mx-auto">
-            Where Nature and Luxury <br />
+            Where Real Estate Investment, Nature and Luxury <br />
             Find Their <span className="font-serif italic text-emerald-400">Perfect Equilibrium</span>
           </h2>
 
           <p className="text-stone-300 text-xs md:text-sm font-light max-w-xl mx-auto mt-6 leading-relaxed">
-            Caaizen Realty is a pioneering development group specializing in premium sustainable real estate. We acquire, design, and develop low-density eco-estates that enhance, rather than deplete, their native ecosystems.
+            Caaizen Realty is a pioneering development group specializing in premium sustainable real estate. We acquire, design, and develop low-density eco-estates that enhance, lifestyle allowing you to stay in pollution free environment, a perfect retreat from the busy & hectic city life. An escape into the nature combined with excellent investment opportunity that will make you proud in the years to come.
           </p>
         </div>
       </section>

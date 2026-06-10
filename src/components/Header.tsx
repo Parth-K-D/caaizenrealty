@@ -56,18 +56,18 @@ export default function Header({
             className="flex items-center gap-3.5 cursor-pointer group"
             onClick={() => handleNav("home")}
           >
-            <div className="flex items-center justify-center w-10 h-10 group-hover:border-emerald-500/50 transition-colors duration-500">
+            <div className="flex items-center justify-center group-hover:border-emerald-500/50 transition-colors duration-500">
               {/* <Logo variant="small" className="w-7 h-5" /> */}
-              <img src="/logo_nobg_smol.png" alt="Caaizen Realty Logo" className="w-8 h-8" />
+              <img src="/logo_nobg.png" alt="Caaizen Realty Logo" className="h-10" />
             </div>
-            <div className="flex flex-col">
+            {/* <div className="flex flex-col">
               <span className="font-sans font-light text-xl tracking-[0.2em] text-[#F3F4F0] uppercase">
                 Caaizen
               </span>
               <span className="font-mono text-[8px] tracking-[0.3em] text-emerald-600 uppercase -mt-1 group-hover:text-emerald-400 transition-colors duration-500">
                 Realty
               </span>
-            </div>
+            </div> */}
           </div>
 
           {/* Desktop Navigation Linkages */}
