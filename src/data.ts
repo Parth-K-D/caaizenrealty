@@ -116,27 +116,36 @@ export const AMENITIES_DATA: Amenity[] = [
 export const TEAM_MEMBERS_DATA: TeamMember[] = [
   {
     id: "team-1",
-    name: "Elias Thorne",
+    name: "Kailash Dubal",
     role: "Founder & Principal Visionary",
-    bio: "Elias holds a Masters in Sustainable Urban Development from ETH Zürich and has over 18 years of pioneering low-density real estate designs across the globe.",
+    bio: "",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAAnNK9FZFLqhxfLeslJQd5RwyiFWfRkDmgfS3MlnEU-PyiAy9E3n3P8Y_hCc93mZSiNNheV4mgndLA8vbyDiKDP6Gb59SJJlZwhnoNjvuKMvIZIRYhIOnZnh-i4k5pUumRY5LCbqtsfXUbaLHycmfF_fIwjuxrmXq1A1tJpMB4Y-gs7_Cu7db-KH-Zd2a7u2mwcEwJ0JngxiKPJIcyM8KrKUYk0fW0bROS8nhLnJ_W9Ggex_6b5dwU-j7IBU8n0KHO2igkQWL_Rw4",
     specialty: "Low-impact design & biomimicry",
     quote: "True luxury is not about excess. It is the privilege of listening to pure silence inside a space that regenerates the ground beneath it."
   },
   {
     id: "team-2",
-    name: "Amara Desai",
-    role: "Chief Landscape Architect",
-    bio: "A native of Bangalore, Amara has curated diverse native forest-replanting programs. She focuses on organic soil life micro-diversity and microclimate design.",
+    name: "Gnanesh",
+    role: "Chief Architect",
+    bio: "A native of Bangalore, Gnanesh has curated diverse native forest-replanting programs. He focuses on organic soil life micro-diversity and microclimate design.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDsBs2Gmv85UI9uGyBxQeyst2vGedfZgWjVIlMSCbeSBpOiYMNUlRtrHUUduhK6jxlIfnfpzvYwyzXTXOaC-5R0pt-z_ATkkHd0S0j2JMraoxYXRxPzukCwQ5tNeF4cj7yqyCzpxx2cabB958INpi5_cTuLltOxaRhpNAmCUeWd49-q6mDA4NhGCSOFNttcbVmK-tMNa2tSIt_QCLP3dSxZ4AnjA-A1jBqpTDNDNDh1cWCoKB169aOylJ3f8Z0_e14cNUFF2c8P0TM",
     specialty: "Permaculture & Native Forest Re-wilding",
     quote: "We do not clear land. We consult the trees, observe the hydrological basins, and gracefully slip our dwellings between the forest lines."
   },
   {
     id: "team-3",
-    name: "Julian Reed",
-    role: "Senior Real Estate Consultant",
-    bio: "Julian coordinates bespoke investment consultations, ensuring transparency in agricultural land conversions, multi-generational security, and clean legal transfers.",
+    name: "Suresh G",
+    role: "Partner & Chief Engineer",
+    bio: "Suresh G coordinates bespoke investment consultations, ensuring transparency in agricultural land conversions, multi-generational security, and clean legal transfers.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDX7qCBvoeWy84hYgkPUx90qMHVOvr7rmdHHj0DMQjNul_9_xYebiEZG4mjP9wGJ2mBXqKt_NxuZ33FKQT8V1AmD_d577oDYXPQsHgCuiihqFt_76dLpyQ63jUOZgY_aE0B7raSOhGDmtIL3HKiL7OTQMkQIxSkqqQ7CFeqG-gb0NYU9ZrdKjLaTSuYLMyAvil5BQ_TE5PwMWTuOYaVTjowlxn-bDLAdZDNqD80ehRBwzDvf1ZtnVgWs6jAldZeq2r-RspaKptdQLw",
+    specialty: "Legal security & asset integration",
+    quote: "Securing an estate at Caaizen is a legacy acquisition. It is a bulletproof wealth reserve that secures both your family and the natural ecosystem."
+  }
+  {
+    id: "team-4",
+    name: "Vadiraj",
+    role: "Senior Advisor & Sales Head",
+    bio: "",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDX7qCBvoeWy84hYgkPUx90qMHVOvr7rmdHHj0DMQjNul_9_xYebiEZG4mjP9wGJ2mBXqKt_NxuZ33FKQT8V1AmD_d577oDYXPQsHgCuiihqFt_76dLpyQ63jUOZgY_aE0B7raSOhGDmtIL3HKiL7OTQMkQIxSkqqQ7CFeqG-gb0NYU9ZrdKjLaTSuYLMyAvil5BQ_TE5PwMWTuOYaVTjowlxn-bDLAdZDNqD80ehRBwzDvf1ZtnVgWs6jAldZeq2r-RspaKptdQLw",
     specialty: "Legal security & asset integration",
     quote: "Securing an estate at Caaizen is a legacy acquisition. It is a bulletproof wealth reserve that secures both your family and the natural ecosystem."

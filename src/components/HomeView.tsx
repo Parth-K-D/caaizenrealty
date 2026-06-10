@@ -98,7 +98,7 @@ export default function HomeView({ onSetTab }: HomeViewProps) {
             transition={{ delay: 0.5, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
             Architecture Rooted <br />
-            <span className="font-serif italic font-normal text-emerald-400">in Nature.</span>
+            <span className="font-serenity italic font-normal text-emerald-400">in Nature.</span>
           </motion.h2>
 
           <motion.p
@@ -505,7 +505,7 @@ export default function HomeView({ onSetTab }: HomeViewProps) {
       <footer className="py-16 bg-[#111310] text-[#717a6c]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center border-t border-stone-900/40 pt-12">
           <div className="flex flex-col items-start gap-2">
-            <span className="font-mono text-[9px] tracking-[0.3em] uppercase block text-stone-600">Developed in Trust by</span>
+            <span className="font-serenity text-[9px] tracking-[0.3em] uppercase block text-stone-600">Developed in Trust by</span>
             <img src="/logo_nobg.png" alt="Caaizen Realty Logo" className="h-20" />
           </div>
           <div className="text-center md:text-left">

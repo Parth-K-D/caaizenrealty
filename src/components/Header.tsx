@@ -78,7 +78,7 @@ export default function Header({
                 onClick={() => handleNav(item.id)}
                 className={`relative py-2 text-xs tracking-[0.2em] uppercase transition-colors duration-300 ${
                   currentTab === item.id
-                    ? "text-emerald-400 font-medium"
+                    ? "text-emerald-400 font-serenity"
                     : "text-stone-400 hover:text-stone-100"
                 }`}
               >
@@ -110,14 +110,14 @@ export default function Header({
           className="fixed inset-0 z-35 bg-[#121411]/98 flex flex-col justify-center px-10 md:hidden pt-20"
         >
           <div className="flex flex-col gap-6 text-left">
-            <span className="font-mono text-[9px] tracking-[0.4em] text-emerald-500 uppercase mb-2">
+            <span className="font-serenity text-[9px] tracking-[0.4em] text-emerald-500 uppercase mb-2">
               Menu Navigation
             </span>
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNav(item.id)}
-                className={`text-2xl font-light tracking-widest uppercase text-left transition-colors duration-300 ${
+                className={`text-2xl font-serenity tracking-widest uppercase text-left transition-colors duration-300 ${
                   currentTab === item.id ? "text-emerald-400" : "text-stone-300"
                 }`}
               >
@@ -130,7 +130,7 @@ export default function Header({
 
           {/* Bottom mobile credit branding */}
           <div className="absolute bottom-10 left-10 right-10">
-            <p className="font-mono text-[9px] tracking-widest text-[#5e665a] uppercase">
+            <p className="font-serenity text-[9px] tracking-widest text-[#5e665a] uppercase">
               Caaizen Realty • Curated Eco-Estates
             </p>
           </div>

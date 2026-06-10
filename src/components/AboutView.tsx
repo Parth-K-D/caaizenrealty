@@ -53,117 +53,6 @@ export default function AboutView({ onSetTab }: AboutViewProps) {
         </div>
       </section>
 
-      {/* ================= CORE VALUES BENTO GRID ================= */}
-      <section className="py-24 md:py-32 bg-[#131512] border-b border-stone-900">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-          
-          {/* Values Grid left */}
-          <div className="lg:col-span-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <div className="p-6 bg-[#181a15] border border-stone-850 rounded-lg space-y-4">
-              <div className="text-emerald-500 bg-[#131512] w-11 h-11 border border-stone-900 flex items-center justify-center rounded-full">
-                <Leaf className="w-5 h-5 stroke-[1.5]" />
-              </div>
-              <h4 className="font-sans font-medium text-stone-100 text-base">
-                Regenerative Agriculture
-              </h4>
-              <p className="text-stone-400 text-xs font-light leading-relaxed">
-                Establishing multi-tiered wild agroforestry and organic orchards in soil perimeters pre-sale to restore bird nesting and regional microclimates.
-              </p>
-            </div>
-
-            <div className="p-6 bg-[#181a15] border border-stone-850 rounded-lg space-y-4">
-              <div className="text-emerald-500 bg-[#131512] w-11 h-11 border border-stone-900 flex items-center justify-center rounded-full">
-                <Zap className="w-5 h-5 stroke-[1.5]" />
-              </div>
-              <h4 className="font-sans font-medium text-stone-100 text-base">
-                Off-Grid Independence
-              </h4>
-              <p className="text-stone-400 text-xs font-light leading-relaxed">
-                Integrated storm-water bioswales, high-yield solar rooftop micro-grids, and zero consumption reliance on municipal state utility frameworks.
-              </p>
-            </div>
-
-            <div className="p-6 bg-[#181a15] border border-stone-850 rounded-lg space-y-4">
-              <div className="text-emerald-500 bg-[#131512] w-11 h-11 border border-stone-900 flex items-center justify-center rounded-full">
-                <Flame className="w-5 h-5 stroke-[1.5]" />
-              </div>
-              <h4 className="font-sans font-medium text-stone-100 text-base">
-                Aesthetic Integrity
-              </h4>
-              <p className="text-stone-400 text-xs font-light leading-relaxed">
-                Rammed earth walls, local structural timber frameworks, and low-viscosity organic paints designed for perfect sensory integration.
-              </p>
-            </div>
-
-            <div className="p-6 bg-[#181a15] border border-stone-850 rounded-lg space-y-4">
-              <div className="text-emerald-500 bg-[#131512] w-11 h-11 border border-stone-900 flex items-center justify-center rounded-full">
-                <FileCheck className="w-5 h-5 stroke-[1.5]" />
-              </div>
-              <h4 className="font-sans font-medium text-stone-100 text-base">
-                Multi-Generational Security
-              </h4>
-              <p className="text-stone-400 text-xs font-light leading-relaxed">
-                Meticulous legal vetting, completely secure conversions for agricultural use, transparent property layouts, and ironclad title safety checks.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* ================= MODERN INTERIOR SHOWCASE ================= */}
-      <section className="py-24 bg-[#111310] border-b border-stone-900">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-          
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            className="border border-stone-800 p-2 bg-[#1b1c19]/50 rounded-lg shadow-2xl"
-          >
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWKtFBenToGQ-EMwjg1MPJZH9ebyMsgsFqmPb49Dp7W_Q6cN7JbaoOdCTIFcUWiLCK5W48-v10Kw9q9J8D8TVacBxSCuhE9u1F_eMpwUBnXpIzbJ9tUmnfrh_UH8UQBV-dDGoHIFwQroYIm-JdRu-FkbEoZu4YPbTUPiug3-jzbuBD48L_g41H5QS2iPt6-2mamyICvWV8s3P0jS2QFF0kweHSnxc5j4dtZ-CcdOUs6AZbMy1uY--Ic3C_MheDqMpFT0Z7_exBMkI"
-              alt="High-end modern interior architecture of eco cottages"
-              className="w-full aspect-[4/3] object-cover rounded filter contrast-102 saturate-95"
-              referrerPolicy="no-referrer"
-            />
-          </motion.div>
-
-          <div className="space-y-6">
-            <span className="font-mono text-[10px] tracking-[0.4em] text-emerald-500 uppercase">
-              Material Sourcing
-            </span>
-            <h3 className="text-2xl md:text-4xl font-light tracking-tight text-[#F3F4F1] font-sans">
-              Handcrafted Interior<br />
-              <span className="font-serif italic font-normal text-emerald-400">Tactility & Acoustics</span>
-            </h3>
-            
-            <p className="text-stone-300 text-xs md:text-sm font-light leading-relaxed leading-relaxed font-sans">
-              We focus heavily on structural sensory design. Open air corridors, heavy basalt tiling, and custom cedar-mesh ceiling panels minimize internal ambient noise while aligning internal thermal balances with native woodland shifts.
-            </p>
-            
-            <ul className="space-y-3 pt-3 text-xs text-stone-400 font-mono tracking-wide">
-              <li className="flex items-center gap-3">
-                <span className="text-emerald-500">✓</span>
-                <span>BASALT HEARTH TILING • PASSIVE HEAT CONTROL</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-emerald-500">✓</span>
-                <span>CEDAR ACOUSTIC LOUVERS • NATURAL HUMIDITY VENT</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-emerald-500">✓</span>
-                <span>SOY-BASED SEALERS • ZERO-VOC EMISSION</span>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
       {/* ================= LEADERSHIP SYSTEM (INTERACTIVE TEAM BIOS) ================= */}
       <section className="py-24 md:py-32 bg-[#121411]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 mb-16 select-none text-center">
@@ -171,7 +60,7 @@ export default function AboutView({ onSetTab }: AboutViewProps) {
             The Visionaries
           </span>
           <h3 className="text-3xl md:text-5xl font-light tracking-tight text-[#F3F4F1] mt-2 font-sans">
-            Our Planners & <span className="font-serif italic text-emerald-400">Architectural Guardians</span>
+            Our Team
           </h3>
           <p className="text-stone-500 text-xs mt-3 max-w-lg mx-auto leading-normal">
             Click on any leader profile card below to expand their certified bios, specialize quotes, and to coordinate custom consultancy sessions with them.
@@ -209,10 +98,10 @@ export default function AboutView({ onSetTab }: AboutViewProps) {
                 </span>
               </div>
 
-              <div className="mt-5.5 text-emerald-500/80 group-hover:text-emerald-400 font-mono text-[10.5px] uppercase tracking-widest flex items-center gap-1">
+              {/* <div className="mt-5.5 text-emerald-500/80 group-hover:text-emerald-400 font-mono text-[10.5px] uppercase tracking-widest flex items-center gap-1">
                 <span>View Bio Specs</span>
                 <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition" />
-              </div>
+              </div> */}
             </motion.div>
           ))}
         </div>
