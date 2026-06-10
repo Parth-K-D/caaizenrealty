@@ -51,14 +51,14 @@ export default function Header({
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-          {/* Logo Brand Brandmark */}
           <div
             id="brand-logo-trigger"
             className="flex items-center gap-3.5 cursor-pointer group"
             onClick={() => handleNav("home")}
           >
-            <div className="flex items-center justify-center w-10 h-10 border border-[#3e4a3b] bg-stone-900/10 rounded-full group-hover:border-emerald-500/50 transition-colors duration-500">
-              <Logo variant="small" className="w-7 h-5" />
+            <div className="flex items-center justify-center w-10 h-10 group-hover:border-emerald-500/50 transition-colors duration-500">
+              {/* <Logo variant="small" className="w-7 h-5" /> */}
+              <img src="/logo_nobg_smol.png" alt="Caaizen Realty Logo" className="w-8 h-8" />
             </div>
             <div className="flex flex-col">
               <span className="font-sans font-light text-xl tracking-[0.2em] text-[#F3F4F0] uppercase">
