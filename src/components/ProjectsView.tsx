@@ -118,7 +118,7 @@ export default function ProjectsView({ onSetTab }: ProjectsViewProps) {
             transition={{ delay: 0.2, duration: 1 }}
             className="text-4xl md:text-6xl font-light tracking-tight text-[#F3F4F1] leading-tight max-w-3xl"
           >
-            The Retreat:<br />
+            <img src="/retreat_logo.png" alt="Caaizen Realty Logo" className="h-40" />
             <span className="font-serif italic font-normal text-emerald-400">Masterplan, Amenities & Investment</span>
           </motion.h2>
 
@@ -128,7 +128,7 @@ export default function ProjectsView({ onSetTab }: ProjectsViewProps) {
             transition={{ delay: 0.4, duration: 1 }}
             className="text-stone-300 text-sm md:text-base font-light max-w-2xl mt-4 leading-relaxed"
           >
-            Positioned at 900+ meters above sea level in Bidadi, near protected reserve forests. An exclusive master-planned gated sanctuary of 27 premium farmland plots meticulously designed for multi-generational security, natural wellness, and organic lifestyle harmony.
+            Positioned at 900+ meters above sea level in Bidadi, near protected reserve forests. An exclusive master-planned gated sanctuary of premium farm villas meticulously designed for resort themed living. A perfect Retreat, a home away from pollution & chaosof city living where you wake up to the sounds of birds and breathing fresh air. A lifestyle unmatched which will make you and your family proud.
           </motion.p>
         </div>
       </section>
@@ -140,19 +140,19 @@ export default function ProjectsView({ onSetTab }: ProjectsViewProps) {
             <div className="p-6 bg-[#1a1c18] border border-stone-900 rounded-lg shadow-sm">
               <span className="text-stone-500 font-mono text-[9px] uppercase tracking-wider block">Plot Sizes Range</span>
               <span className="text-xl font-light text-[#F3F4F1] mt-2 block font-serif italic text-emerald-400">10 Guntas & Above</span>
-              <p className="text-stone-400 text-xs mt-2 font-mono">Approximately 10,890 sq.ft. to 19,820 sq.ft.</p>
+              <p className="text-stone-400 text-xs mt-2 font-mono">Approximately 10,890 sq.ft.and above+</p>
             </div>
 
             <div className="p-6 bg-[#1a1c18] border border-stone-900 rounded-lg shadow-sm">
               <span className="text-stone-500 font-mono text-[9px] uppercase tracking-wider block">Construction Permitted</span>
-              <span className="text-xl font-light text-[#F3F4F1] mt-2 block font-serif italic text-emerald-400">10% of Family Plot</span>
+              <span className="text-xl font-light text-[#F3F4F1] mt-2 block font-serif italic text-emerald-400">10% Construction & 90% of Nature</span>
               <p className="text-stone-400 text-xs mt-2 font-mono">Governed strictly under local eco-density rules</p>
             </div>
 
             <div className="p-6 bg-[#1a1c18] border border-stone-900 rounded-lg shadow-sm">
-              <span className="text-stone-500 font-mono text-[9px] uppercase tracking-wider block">Built-Up Area Permitted</span>
-              <span className="text-xl font-light text-[#F3F4F1] mt-2 block font-serif italic text-emerald-400">1,000 - 1,300 sq.ft.</span>
-              <p className="text-stone-400 text-xs mt-2 font-mono">Compact wood-cottage floors allowed</p>
+              <span className="text-stone-500 font-mono text-[9px] uppercase tracking-wider block">Built-Up Area</span>
+              <span className="text-xl font-light text-[#F3F4F1] mt-2 block font-serif italic text-emerald-400">Customized Designer villas</span>
+              <p className="text-stone-400 text-xs mt-2 font-mono">Gazebo & Open-air Spaces to match your dreams</p>
             </div>
 
             <div className="p-6 bg-[#1a1c18] border border-stone-900 rounded-lg shadow-sm">
@@ -171,10 +171,10 @@ export default function ProjectsView({ onSetTab }: ProjectsViewProps) {
           <div className="max-w-3xl mx-auto mb-16">
             <span className="font-mono text-[10px] tracking-[0.4em] text-emerald-500 uppercase block">Architectural Development Plan</span>
             <h3 className="text-3xl md:text-5xl font-light tracking-tight text-[#F3F4F1] mt-2 font-sans">
-              The Retreat <span className="font-serif italic font-normal text-emerald-400">Plot Layout</span>
+               <span className="font-serif italic font-normal text-emerald-400">Layout Masterplan - Phase 1</span>
             </h3>
             <p className="text-stone-400 text-sm mt-4 font-light leading-relaxed">
-              Certified high-resolution territorial survey layout map of The Retreat. Each parcel is officially demarcated, pre-plowed with rich organic soil, and pre-aligned for biophilic wood cottage construction.
+              Certified high-resolution territorial survey layout map of The Retreat. Each parcel is officially demarcated and afenced.
             </p>
           </div>
 
@@ -187,29 +187,12 @@ export default function ProjectsView({ onSetTab }: ProjectsViewProps) {
             {/* Layout Map Image Container */}
             <div className="w-full flex items-center justify-center p-2 bg-[#111310]/55 border border-stone-900/50 rounded-lg">
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtgqTiZHWfu0LNe9-aM3rIgDaANR_axeW0qkp4vgjl7DineLSTUlo3pOTprNYEP99qp-943sBlNyX3t5mpyNZhPAvBenYPhJm-PhugE5DUwnhuHk88-fZUYEzt30AcQwUtZY1tJLv5QaydiSJel-abyt7cwskRNg7cWZQEDH6cDn0qTtVjxCFqpjpQB1anUAyokOqkIEIVQ_ZmyBAjGD3QCKzzvNJ9fCbkQmrtVExNB0OtE09jw1QdYn3sz_xgBnzJxoR2zIZYIp0"
+                src="#"
                 alt="Certified land master plan sketch"
                 className="w-full h-auto rounded shadow-lg object-contain brightness-95"
                 style={{ maxHeight: "750px" }}
                 referrerPolicy="no-referrer"
               />
-            </div>
-
-            <div className="flex flex-wrap items-center justify-between gap-4 mt-6 pt-5 border-t border-stone-900 text-left">
-              <div className="flex gap-4 font-mono text-[9px] uppercase tracking-wider text-stone-400 select-none">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 bg-emerald-950 border border-emerald-500 rounded-sm inline-block" />
-                  <span>Available Farmland</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 bg-stone-900 border border-stone-700/60 rounded-sm inline-block" />
-                  <span>Registered / Booked</span>
-                </div>
-              </div>
-
-              <div className="font-mono text-[8.5px] uppercase tracking-widest text-[#5e665a] flex items-center gap-1">
-                <InfoIcon className="w-3 h-3" /> Exact legal shape mapped from certified survey sketch
-              </div>
             </div>
           </div>
 

@@ -156,11 +156,11 @@ export default function ContactView() {
               )}
 
               {/* Small imagery preview from site */}
-              <div className="border p-1 bg-[#1b1c19]/30 rounded mt-4">
+              <div className="flex items-center justify-center">
                 <img 
                   src="/CaaizenQR.png"
                   alt="QR Code for Caaizen Realty Office Location" 
-                  className="w-full object-cover rounded filter brightness-90 shrink-0"
+                  className="w-50 object-cover rounded filter brightness-90 shrink-0"
                   referrerPolicy="no-referrer"
                 />
               </div>

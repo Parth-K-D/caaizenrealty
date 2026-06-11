@@ -36,7 +36,7 @@ export default function AboutView({ onSetTab }: AboutViewProps) {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 1 }}
-            className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-950/40 border border-emerald-900/30 rounded-full mb-6 font-mono text-[9px] tracking-[0.25em] text-emerald-400 uppercase select-none"
+            className="inline-flex items-center gap-2 px-3 py-1 border border-emerald-900/30 rounded-full mb-6 font-mono text-[9px] tracking-[0.25em] text-emerald-400 uppercase select-none"
           >
             <Leaf className="w-3.5 h-3.5" />
             <span>The Caaizen Mandate & Ethics</span>
@@ -62,13 +62,10 @@ export default function AboutView({ onSetTab }: AboutViewProps) {
           <h3 className="text-3xl md:text-5xl font-light tracking-tight text-[#F3F4F1] mt-2 font-sans">
             Our Team
           </h3>
-          <p className="text-stone-500 text-xs mt-3 max-w-lg mx-auto leading-normal">
-            Click on any leader profile card below to expand their certified bios, specialize quotes, and to coordinate custom consultancy sessions with them.
-          </p>
         </div>
 
         {/* Leadership grid */}
-        <div className="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-4 md:grid-cols- gap-8">
           {TEAM_MEMBERS_DATA.map((member) => (
             <motion.div
               key={member.id}
@@ -93,9 +90,6 @@ export default function AboutView({ onSetTab }: AboutViewProps) {
                 <p className="font-mono text-[10px] tracking-widest text-emerald-500 uppercase mb-3">
                   {member.role}
                 </p>
-                <span className="font-mono text-[9px] text-stone-600 block uppercase">
-                  Specialty: {member.specialty}
-                </span>
               </div>
 
               {/* <div className="mt-5.5 text-emerald-500/80 group-hover:text-emerald-400 font-mono text-[10.5px] uppercase tracking-widest flex items-center gap-1">
