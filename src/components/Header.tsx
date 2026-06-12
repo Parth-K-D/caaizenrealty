@@ -33,10 +33,9 @@ export default function Header({
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const navItems = [
-    { id: "home", label: "Home" },
-    { id: "projects", label: "The Retreat" },
+  const navItems = [ 
     { id: "about", label: "About Us" },
+    { id: "projects", label: "The Retreat" },
     { id: "contact", label: "Contact" },
   ];
 
