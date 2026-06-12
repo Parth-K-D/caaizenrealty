@@ -11,30 +11,30 @@ const TESTIMONIALS = [
   {
     id: "test-1",
     text: "We custom-built our weekend cottage here. Seeing our kids walk barefoot, harvest fresh spinach and organic mangoes from our own backyard is a dream come true. The managed agrarian service makes it worry-free.",
-    author: "Rajesh & Anita Kumar",
-    role: "Tech Founders, Indiranagar",
-    location: "Estate Owner, Plot 12"
+    author: "",
+    role: "Tech Founders",
+    location: "Estate Owner"
   },
   {
     id: "test-2",
     text: "A masterclass in biophilic architectural planning. The 10% construction limits ensure that the sanctuary remains pristine and sustainable. Rammed earth design provides incredible passive cooling naturally.",
-    author: "Dr. Sarah Joseph",
+    author: "",
     role: "Ecology Consultant & Architect",
-    location: "Estate Owner, Plot 08"
+    location: "Estate Owner"
   },
   {
     id: "test-3",
     text: "Caaizen made the legal vetting and agricultural registration flawless for us. The high-capacity off-grid solar and water recharge systems work seamlessly with zero pressure on external civic grids.",
-    author: "Vikram Malhotra",
+    author: "",
     role: "Managing Director, FinTech",
-    location: "Estate Owner, Plot 19"
+    location: "Estate Owner"
   },
   {
     id: "test-4",
     text: "I wake up to bird calls instead of traffic and polluted air. These curated trails, shared flower orchards, and absolute silence have completely re-vitalized my creative arts practice and peaceful living.",
-    author: "Devika Sen",
+    author: "",
     role: "Visual Artist & Naturalist",
-    location: "Resident, Plot 03"
+    location: "Resident"
   }
 ];
 
