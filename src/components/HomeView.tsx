@@ -67,7 +67,7 @@ export default function HomeView({ onSetTab }: HomeViewProps) {
           <motion.div
             className="w-full h-full bg-cover bg-center"
             style={{
-              backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbD_OJ0VC69-OyTOLMbfkz-dqF07akLQ2E11zM_QEN7XgvC_TcFBhJbhs9nGy_2GaHI7eHPp0DucjsWQW_7YheAGGrh2Z9_2_6m_XsQqp799OiYoIoNDYs3kiCdwzuIi-CQtYnZ9BgKdaf3-d931ESmyTGlmz_scxPOpbRbkewUxdbBkdJUvc9E5-biI-wIwn-erGD9QGPGqWjtJ1-8xTjH805GdfY94rRBeYrmGYVZAwQkVc3bYYi2DifHbMXhatj1WY4D3cCrtM')`
+              backgroundImage: `url('/bgpics/WhatsApp Image 2026-06-04 at 09.43.02.jpeg')`
             }}
             initial={{ scale: 1.15 }}
             animate={{ scale: 1.02 }}
@@ -281,7 +281,7 @@ export default function HomeView({ onSetTab }: HomeViewProps) {
             <div className="absolute -inset-2 bg-gradient-to-tr from-emerald-900/10 to-transparent blur-xl pointer-events-none" />
             <div className="border border-stone-800 p-2 bg-[#1b1c19]/50 rounded-lg">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqqCxV8u-4AhzVf7xQi2i5wEagvPyObe4uei5H9H9IbhQ960Zq1syCYrIdZr-cCXcNyjVtmShs5JiVijpzcg56SO0VG3rHY4s9qarEuLQSzy8-GHSm0SSJJB94LAA2eRibVjyVPpXx5Aho_BcWoAyc8XUQuOkhGUQFYprhr9pk5NgjmQACHhvnb7amg4XNKB1xDkAzIlGlbHqVM4R7GQkWElolEyhIaHvM9A73PoWoPhceCDLzJIo17Kn9C-4MBiVXMTuCBwuhXq8"
+                src="/bgpics/WhatsApp Image 2026-06-04 at 09.43.05.jpeg"
                 alt="Architecture integrated seamlessly with nature"
                 className="w-full aspect-[4/3] object-cover rounded shadow-2xl filter brightness-95 contrast-105"
                 referrerPolicy="no-referrer"
@@ -320,7 +320,7 @@ export default function HomeView({ onSetTab }: HomeViewProps) {
             className="group relative h-[450px] md:h-[550px] bg-cover bg-center rounded-lg overflow-hidden border border-stone-800 shadow-2xl flex items-end p-6 md:p-12 cursor-pointer"
             onClick={() => onSetTab("projects")}
             style={{
-              backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUh6zQg6ZVQTy53QDJKyxLcNe3p9teThmUXnq6Xz8DntrixPbbQXxlb_QnCzVwhyx6r70nh7xqbNHxg1vexK5d4ksTJMTyxUVmEbqFiJin4enb7DmynVdxJ6WMCLEIWguNXZV_lA1R_UtydRMV8l-2TjNZBppcAfFXxnvFAP-vMtiq8bFTSGgV8vuo-0Vr81KSxXXohQzZtQQpBnHKodHQiR5NNxC5G065ERqn3F7EN42xR_QJD9DWpQFpiaYdoCAvSJR9YQDn7Dw')`
+              backgroundImage: `url('/bgpics/WhatsApp Image 2026-06-04 at 09.42.59.jpeg')`
             }}
           >
             {/* Dark wash overlay gets lighter on hover */}
@@ -388,7 +388,7 @@ export default function HomeView({ onSetTab }: HomeViewProps) {
             transition={{ duration: 0.8 }}
             className="md:col-span-7 h-[380px] rounded-lg overflow-hidden border border-stone-800 bg-cover bg-center flex items-end p-6 md:p-8 relative group"
             style={{
-              backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5Ofzx9VxfKxu_pe7pL41OHHFlpMrYrrnxTsexvlroWaylACCem-xTZLiMlt6Z5blgm3v8zw0kpDmFdWJfE1tRqEGZeuHh2mkXFaBi1H6xaG153YXfa-xOQdn79ffBhULAVyEfd90rlKk3XkBdmWQikDkN5hmSPbn4JHGEgqmagc0UTc0lbo9k6gp02q1zlFt_l4JgekQVAy0YuuOvRZAxB5_xwEl4lHYdLv8Ye9Mzwi9y574t_ncoorGgDpsvgro3EUGWsS9sA1g')`
+              backgroundImage: `url('/bgpics/WhatsApp Image 2026-06-04 at 09.43.02.jpeg')`
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-t from-[#10120f]/95 via-[#10120f]/60 to-transparent transition-opacity group-hover:opacity-90" />
