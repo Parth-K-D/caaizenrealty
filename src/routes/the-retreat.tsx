@@ -12,7 +12,7 @@ import retreatLogo from "@/assets/retreat-logo.png.asset.json";
 export const Route = createFileRoute("/the-retreat")({
   head: () => ({
     meta: [
-      { title: "The Retreat — Caaizen Realty | Bidadi, Bengaluru" },
+      { title: "The Retreat — Caaizen Realty" },
       {
         name: "description",
         content:

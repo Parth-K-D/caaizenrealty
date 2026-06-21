@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Caaizen Realty — Homes designed to inspire" },
+      { title: "Caaizen Realty" },
       {
         name: "description",
         content:
           "Caaizen Realty crafts emotionally rich, environmentally conscious homes. Explore The Retreat in Bidadi, Bengaluru.",
       },
       { name: "author", content: "Caaizen Realty" },
-      { property: "og:title", content: "Caaizen Realty — Homes designed to inspire" },
+      { property: "og:title", content: "Caaizen Realty" },
       {
         property: "og:description",
         content: "Luxury lies in simplicity, in silence, in soil.",

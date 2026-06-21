@@ -11,13 +11,13 @@ import retreatInterior from "@/assets/retreat-interior.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Caaizen Realty — Homes designed to inspire" },
+      { title: "Caaizen Realty" },
       {
         name: "description",
         content:
           "Caaizen Realty crafts emotionally rich, environmentally conscious homes in Bengaluru. Explore The Retreat in Bidadi.",
       },
-      { property: "og:title", content: "Caaizen Realty — Homes designed to inspire" },
+      { property: "og:title", content: "Caaizen Realty" },
       {
         property: "og:description",
         content: "Luxury lies in simplicity, in silence, in soil.",
