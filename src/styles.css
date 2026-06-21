@@ -1,0 +1,144 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Caaizen Realty design system
+ * Palette inspired directly by the brand brochure: deep olive green,
+ * warm cream, soft sage and a muted gold accent.
+ *
+ * Typography:
+ *  - Display: "Italiana" — closest free analogue to the brochure's
+ *    "Simple Serenity" display lettering (high-contrast elegant serif).
+ *  - Body:    "Cormorant Garamond" — refined serif for body copy.
+ *  - Eyebrow: "Cormorant SC" small caps for section labels.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-cream: var(--cream);
+  --color-olive: var(--olive);
+  --color-olive-deep: var(--olive-deep);
+  --color-gold: var(--gold);
+  --color-sage: var(--sage);
+
+  --font-display: "Italiana", "Cormorant Garamond", serif;
+  --font-serif: "Cormorant Garamond", "Italiana", serif;
+  --font-eyebrow: "Cormorant SC", "Cormorant Garamond", serif;
+}
+
+:root {
+  --radius: 0.25rem;
+
+  /* Brand palette */
+  --olive: oklch(0.42 0.045 120);          /* main brochure green */
+  --olive-deep: oklch(0.32 0.04 125);
+  --cream: oklch(0.95 0.02 90);            /* warm off-white */
+  --gold: oklch(0.72 0.11 85);
+  --sage: oklch(0.78 0.04 115);
+
+  --background: var(--cream);
+  --foreground: var(--olive-deep);
+
+  --card: oklch(0.97 0.015 90);
+  --card-foreground: var(--olive-deep);
+  --popover: var(--cream);
+  --popover-foreground: var(--olive-deep);
+
+  --primary: var(--olive);
+  --primary-foreground: var(--cream);
+  --secondary: oklch(0.9 0.025 95);
+  --secondary-foreground: var(--olive-deep);
+  --muted: oklch(0.92 0.02 95);
+  --muted-foreground: oklch(0.45 0.03 120);
+  --accent: var(--gold);
+  --accent-foreground: var(--olive-deep);
+  --destructive: oklch(0.55 0.18 28);
+  --destructive-foreground: var(--cream);
+  --border: oklch(0.85 0.02 100);
+  --input: oklch(0.88 0.02 100);
+  --ring: var(--olive);
+}
+
+.dark {
+  --background: var(--olive-deep);
+  --foreground: var(--cream);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-serif);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    line-height: 1.05;
+  }
+
+  .font-display { font-family: var(--font-display); }
+  .font-serif   { font-family: var(--font-serif); }
+  .font-eyebrow {
+    font-family: var(--font-eyebrow);
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+  }
+
+  .surface-olive {
+    background-color: var(--olive);
+    color: var(--cream);
+  }
+  .surface-olive-deep {
+    background-color: var(--olive-deep);
+    color: var(--cream);
+  }
+  .surface-cream {
+    background-color: var(--cream);
+    color: var(--olive-deep);
+  }
+
+  .hairline {
+    height: 1px;
+    background: color-mix(in oklab, currentColor 30%, transparent);
+  }
+}
