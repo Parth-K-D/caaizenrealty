@@ -1,27 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { Reveal } from "@/components/reveal";
-
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Caaizen Realty | Visit us in Bengaluru" },
-      {
-        name: "description",
-        content:
-          "Speak with the Caaizen Realty team. Email, phone, and office address in Bidadi, Bengaluru.",
-      },
-      { property: "og:title", content: "Contact Caaizen Realty" },
-      {
-        property: "og:description",
-        content: "Come visit. Stay a while. We'd love to walk the land with you.",
-      },
-    ],
-  }),
-  component: ContactPage,
-});
 
 const channels = [
   {
@@ -44,7 +25,11 @@ const channels = [
   },
 ];
 
-function ContactPage() {
+export default function Contact() {
+  useEffect(() => {
+    document.title = "Contact — Caaizen Realty";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <SiteNav />
@@ -82,7 +67,7 @@ function ContactPage() {
 
       {/* CHANNELS */}
       <section className="surface-cream py-32 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 font-bold break-words">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
           {channels.map((c, i) => (
             <Reveal key={c.label} delay={i * 0.1}>
               <a

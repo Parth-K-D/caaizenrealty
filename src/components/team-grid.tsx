@@ -42,17 +42,11 @@ export function TeamGrid() {
         <Reveal key={f.name} delay={i * 0.1}>
           <article className="group">
             <div className="aspect-[4/5] w-full bg-olive/10 border border-olive/15 flex items-center justify-center overflow-hidden">
-              <span className="font-display text-7xl text-olive/40 italic">
-                {f.image ? (
-                  <img
-                    src={f.image}
-                    alt={f.name}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  f.initials
-                )}
-              </span>
+              <img
+                src={f.image}
+                alt={f.name}
+                className="w-full h-full object-cover"
+              />
             </div>
             <p className="font-eyebrow text-accent mt-6 text-[0.65rem]">{f.role}</p>
             <h3 className="font-display text-3xl mt-2 text-olive-deep">{f.name}</h3>

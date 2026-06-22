@@ -1,6 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { Reveal } from "@/components/reveal";
@@ -9,28 +8,11 @@ import retreatInterior from "@/assets/retreat-interior.jpg";
 import retreatLandscape from "@/assets/retreat-landscape.jpg";
 import retreatLogo from "@/assets/retreat-logo.png.asset.json";
 
-export const Route = createFileRoute("/the-retreat")({
-  head: () => ({
-    meta: [
-      { title: "The Retreat — Caaizen Realty" },
-      {
-        name: "description",
-        content:
-          "The Retreat by Caaizen Realty — 27 thoughtfully planned plots in Bidadi, Bengaluru. A philosophy of natural luxury, silence and soil.",
-      },
-      { property: "og:title", content: "The Retreat — Caaizen Realty" },
-      {
-        property: "og:description",
-        content: "27 plots in Bidadi, Bengaluru. Designed to honor the land.",
-      },
-      { property: "og:image", content: retreatHero },
-      { name: "twitter:image", content: retreatHero },
-    ],
-  }),
-  component: RetreatPage,
-});
+export default function TheRetreat() {
+  useEffect(() => {
+    document.title = "The Retreat — Caaizen Realty | Bidadi, Bengaluru";
+  }, []);
 
-function RetreatPage() {
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -209,7 +191,7 @@ function RetreatPage() {
               <div className="surface-olive p-10 h-full flex flex-col justify-between">
                 <div>
                   <p className="font-eyebrow text-accent">Connectivity</p>
-                  <ul className="mt-6 space-y-5 text-cream font-serif text-lg">
+                  <ul className="mt-6 space-y-5 text-cream/90 font-serif text-lg">
                     {[
                       ["60 min", "to Bangalore City Center"],
                       ["5 min", "to Mysore Road"],

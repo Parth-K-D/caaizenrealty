@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import caaizenLogo from "@/assets/caaizen-logo.png.asset.json";
 
 export function SiteFooter() {

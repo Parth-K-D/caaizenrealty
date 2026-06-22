@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
@@ -8,26 +9,11 @@ import homeHero from "@/assets/home-hero.jpg";
 import retreatHero from "@/assets/retreat-hero.jpg";
 import retreatInterior from "@/assets/retreat-interior.jpg";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Caaizen Realty" },
-      {
-        name: "description",
-        content:
-          "Caaizen Realty crafts emotionally rich, environmentally conscious homes in Bengaluru. Explore The Retreat in Bidadi.",
-      },
-      { property: "og:title", content: "Caaizen Realty" },
-      {
-        property: "og:description",
-        content: "Luxury lies in simplicity, in silence, in soil.",
-      },
-    ],
-  }),
-  component: HomePage,
-});
+export default function Home() {
+  useEffect(() => {
+    document.title = "Caaizen Realty — Homes designed to inspire";
+  }, []);
 
-function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       <SiteNav />
