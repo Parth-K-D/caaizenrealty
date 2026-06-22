@@ -6,10 +6,20 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+
 export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  plugins: [
+    // ... keep your existing plugins here
+    {
+      name: 'force-close',
+      closeBundle() {
+        setTimeout(() => process.exit(0), 0);
+      }
+    }
+  ]
 });
