@@ -105,7 +105,7 @@ function ContactPage() {
         </div>
       </section>
 
-      {/* MAP */}
+      {/* QR CODE */}
       <section className="surface-olive py-32 px-6 md:px-10">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-12 items-start">
           <Reveal>
@@ -117,7 +117,7 @@ function ContactPage() {
               The Retreat site is a short drive from Bidadi town, set against the green folds west of Bengaluru. Pick a morning — we'll meet you there.
             </p>
             <a
-              href="mailto:hello@caaizenrealty.in?subject=Site%20visit%20request"
+              href="mailto:caaizenrealty@gmail.com?subject=Site%20visit%20request"
               className="mt-10 inline-flex items-center gap-4 border border-cream/40 px-8 py-4 font-eyebrow text-cream hover:bg-cream hover:text-olive-deep transition-colors duration-500"
             >
               Schedule a visit <span>→</span>
