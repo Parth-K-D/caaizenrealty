@@ -102,8 +102,7 @@ export default function Home() {
           <Reveal className="lg:col-span-5">
             <p className="font-eyebrow text-olive">Featured Project</p>
             <h2 className="font-display text-[clamp(3rem,6vw,5.5rem)] leading-[0.95] mt-6 text-olive-deep">
-              The<br />
-              <span className="italic">Retreat</span>
+              <img src="/retreat_logo.png" alt="Caaizen Realty QR Code" className="w-full h-full object-cover" />+
             </h2>
             <div className="hairline w-32 mt-8 text-olive" />
             <p className="mt-8 text-lg leading-relaxed text-olive-deep/80 max-w-md">

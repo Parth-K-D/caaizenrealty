@@ -111,7 +111,7 @@ export default function TheRetreat() {
             </p>
             <ul className="mt-10 space-y-4 text-olive-deep font-serif text-lg">
               {[
-                "27 individually planned plots",
+                "Individually planned plots",
                 "40 ft & 60 ft wide tree-lined roads",
                 "Designed setbacks for privacy & light",
                 "Naturally landscaped community spaces",
@@ -132,14 +132,14 @@ export default function TheRetreat() {
           <Reveal className="lg:col-span-5">
             <p className="font-eyebrow text-accent">The Plan</p>
             <h2 className="font-display text-6xl mt-6 leading-tight">
-              L<span className="italic">ay</span>out
+              Phase I
             </h2>
             <p className="mt-8 text-lg leading-relaxed text-cream/80 max-w-md">
-              The Retreat is composed of 27 plots, organized along 40 and 60 foot wide roads that wind through preserved tree cover. Every plot opens onto green.
+              The Retreat's Phase I is composed of 30 plots, organized along 40 and 60 foot wide roads that wind through preserved tree cover. Every plot opens onto green.
             </p>
             <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
               {[
-                ["27", "Plots"],
+                ["30", "Plots"],
                 ["60ft", "Main Road"],
                 ["40ft", "Inner Roads"],
               ].map(([n, l]) => (
@@ -158,9 +158,6 @@ export default function TheRetreat() {
                 className="w-full h-full object-cover opacity-90"
                 loading="lazy"
               />
-              <div className="absolute bottom-6 right-6 font-eyebrow text-[0.6rem] text-cream/80">
-                N · S · E · W
-              </div>
             </div>
           </Reveal>
         </div>

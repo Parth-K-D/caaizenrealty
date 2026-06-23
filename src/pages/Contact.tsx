@@ -6,22 +6,29 @@ import { Reveal } from "@/components/reveal";
 
 const channels = [
   {
+    label: "WhatsApp",
+    value: "Talk with Us",
+    href: "https://wa.me/919731199655",
+    note: "Let us talk through your plans and questions.",
+  },
+  {
+    label: "Call",
+    value: "+91 9731199655",
+    href: "tel:+91 9731199655",
+    note: "Mon–Sun, 10 am — 7 pm IST.",
+  },
+  {
     label: "Write to us",
     value: "caaizenrealty@gmail.com",
     href: "mailto:caaizenrealty@gmail.com",
     note: "We reply within one working day.",
   },
   {
-    label: "Call",
-    value: "+91 9731199655",
-    href: "tel:+91 9731199655",
-    note: "Mon–Sat, 10 am — 7 pm IST.",
-  },
-  {
-    label: "Visit",
+    label: "Corporate Office",
     value: "224, 3rd Floor, S.S Complex 14th Cross Sampige Road, Malleshwaram, Bengaluru",
     href: "https://maps.app.goo.gl/2j4DEDc1RoTDQvS49?g_st=awb",
     note: "By appointment — let us walk the land with you.",
+    image: "/CaaizenQR.png"
   },
 ];
 
@@ -67,7 +74,7 @@ export default function Contact() {
 
       {/* CHANNELS */}
       <section className="surface-cream py-32 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 break-words">
           {channels.map((c, i) => (
             <Reveal key={c.label} delay={i * 0.1}>
               <a
@@ -84,13 +91,23 @@ export default function Contact() {
                 <span className="mt-8 inline-flex items-center gap-3 font-eyebrow text-[0.65rem] opacity-80">
                   Open <span className="transition-transform duration-500 group-hover:translate-x-1">→</span>
                 </span>
+                {/* 👇 CONDITIONAL IMAGE RENDERING 👇 */}
+                {/* {c.image && (
+                  <div className="mt-4 overflow-hidden rounded border border-olive/10 max-w-[50%] mx-auto">
+                    <img 
+                      src={c.image} 
+                      alt={`${c.label} illustration`} 
+                      className="w-full h-full object-cover" 
+                    />
+                  </div>
+                )} */}
               </a>
             </Reveal>
           ))}
         </div>
       </section>
 
-      {/* QR CODE */}
+      {/* QR CODE of THe Retreat Site */}
       <section className="surface-olive py-32 px-6 md:px-10">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-12 items-start">
           <Reveal>
@@ -102,21 +119,21 @@ export default function Contact() {
               The Retreat site is a short drive from Bidadi town, set against the green folds west of Bengaluru. Pick a morning — we'll meet you there.
             </p>
             <a
-              href="mailto:caaizenrealty@gmail.com?subject=Site%20visit%20request"
+              href="https://maps.app.goo.gl/evLF9No2TCkYMY6dA"
               className="mt-10 inline-flex items-center gap-4 border border-cream/40 px-8 py-4 font-eyebrow text-cream hover:bg-cream hover:text-olive-deep transition-colors duration-500"
             >
-              Schedule a visit <span>→</span>
+              Visit Site<span>→</span>
             </a>
           </Reveal>
-          <Reveal delay={0.2} className="lg:col-span-2">
-            <div className="aspect-[5/5] w-100 overflow-hidden border border-cream/10">
+          {/* <Reveal delay={0.2} className="lg:col-span-2">
+            <div className="aspect-[5/5] max-w-[60%] overflow-hidden border border-cream/10 mx-auto rounded">
               <img 
                 src="/CaaizenQR.png"
                 alt="Caaizen Realty QR Location Map"
                 className="w-full h-full object-cover"
               />
             </div>
-          </Reveal>
+          </Reveal> */}
         </div>
       </section>
 
